@@ -31,3 +31,7 @@ app.use(errorMiddleware);
 server.listen(PORT, () => {
   console.log(`your server listening at port ${PORT}`);
 });
+
+app.get("/", (req, res) => {
+  res.send("<h1>hello guys</h1>");
+});
